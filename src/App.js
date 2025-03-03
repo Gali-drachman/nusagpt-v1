@@ -1,6 +1,5 @@
 import React from "react";
-import Dashboard from "./pages/Dashboard";
-import "./styles.css"; // Tambahkan file CSS nanti
+import Dashboard from "./pages/Dashboard"; // Pastikan jalur impor benar
 
 function App() {
   return <Dashboard />;
