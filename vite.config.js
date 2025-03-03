@@ -4,8 +4,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   esbuild: {
-    loader: 'jsx', // Tambahkan ini
-    include: /src\/.*\.js$/, // Pastikan semua file JS di dalam src bisa menggunakan JSX
+    jsxFactory: 'React.createElement',
+    jsxFragment: 'React.Fragment',
+    include: /\.(js|jsx)$/,
+    loader: 'jsx',
   },
   server: {
     host: '0.0.0.0', // Biarkan server bisa diakses dari luar
