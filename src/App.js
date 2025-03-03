@@ -1,12 +1,9 @@
 import React from "react";
+import Dashboard from "./pages/Dashboard";
+import "./styles.css"; // Tambahkan file CSS nanti
 
 function App() {
-  return (
-    <div>
-      <h1>Welcome to NusaGPT Dashboard</h1>
-      <p>Mulai membangun UI chatbot AI kita!</p>
-    </div>
-  );
+  return <Dashboard />;
 }
 
 export default App;
